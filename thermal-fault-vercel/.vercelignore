@@ -1,0 +1,4 @@
+scripts/_work
+__pycache__
+*.pt
+*.pth

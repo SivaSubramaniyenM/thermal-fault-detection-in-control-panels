@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/detect_yolo.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{public/**,scripts/**,models/frcnn_*}"
+    },
+    "api/detect_frcnn_rgb.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{public/**,scripts/**,models/yolo_*,models/frcnn_thermal*}"
+    },
+    "api/detect_frcnn_thermal.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{public/**,scripts/**,models/yolo_*,models/frcnn_rgb*}"
+    }
+  }
+}
