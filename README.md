@@ -79,18 +79,3 @@ The committed `results/` directory contains CPU results for YOLOv8s and Faster R
 ```
 
 The tests use synthetic images and brief smoke training, not pretrained downloads or accuracy benchmarks.
-
-## Publish To GitHub
-
-This folder is intended to be a new repository, not a copy of the existing repository's Git history. After reviewing the files, rights and recorded results, create an empty GitHub repository and run:
-
-```powershell
-git status
-git add .
-git commit -m "Initial detection pipeline"
-git branch -M main
-git remote add origin https://github.com/<YOUR-USER>/<YOUR-REPOSITORY>.git
-git push -u origin main
-```
-
-Replace the remote URL with your repository's URL. The ignored datasets and checkpoints must be distributed separately only if you have permission; adding them to a GitHub repository requires an explicit storage and licensing decision.
