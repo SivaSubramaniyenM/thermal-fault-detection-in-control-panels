@@ -14,7 +14,7 @@ An object-detection pipeline for comparing YOLOv8s, Faster R-CNN and SSD300 on s
 
 ## Data And Checkpoints
 
-The original local package includes `RGB_Dataset/` and `Thermal_Dataset/`, each with the COCO split annotations and their referenced images. It also includes the available YOLOv8s and Faster R-CNN best checkpoints and category mappings under those directories. These directories and all `.pt` files are ignored by Git: they **will not be included in a GitHub push or clone**. No SSD checkpoint is included; train one before using the three-model runner evaluation.
+The original local package includes `RGB_Dataset/` and `Thermal_Dataset/`, each with the COCO split annotations and their referenced images. It also includes the available YOLOv8s and Faster R-CNN best checkpoints and category mappings under those directories. 
 
 To run after cloning, obtain the data and weights separately from an authorized source and restore the following layout:
 
