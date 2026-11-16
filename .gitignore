@@ -1,0 +1,23 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local data and model artifacts; confirm rights before sharing separately
+/RGB_Dataset/
+/Thermal_Dataset/
+*.pt
+*.pth
+
+# Generated pipeline and experiment outputs
+/detection_runs/
+/evaluation_runs/
+/runs/
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
